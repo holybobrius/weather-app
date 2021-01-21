@@ -1,0 +1,1 @@
+(()=>{"use strict";!async function(e){(await fetch("http://api.openweathermap.org/data/2.5/weather?q=Moscow&APPID=ad5fe16a4535b8d1f2a2656afa96c6eb",{mode:"cors"})).json().then((function(e){console.log(e);const a={city:e.name,country:e.sys.country,temp:e.main.temp,feels_like:e.main.feels_like,main:e.weather[0].main};console.log(a)}))}()})();
