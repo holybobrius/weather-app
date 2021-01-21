@@ -10,7 +10,6 @@ const buildWeatherInfo = (temperature, feels_like, main, city, country) => {
     mainP.innerHTML = `${temperature}°C, ${main}`;
     feels_likeP.innerHTML = `Feels like: ${feels_like}°C`;
     slider.style.display = "flex";
-    console.log(`Weather: ${main}`)
     switch(main) {
         case "Snow": 
             icon.classList.add("fas", "fa-snowflake");
