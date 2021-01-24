@@ -4,7 +4,7 @@ let sliderValue = document.querySelector('.check').checked;
 const slider = document.querySelector('.switch');
  
 export default async (city) => {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=ad5fe16a4535b8d1f2a2656afa96c6eb&units=metric`, 
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=ad5fe16a4535b8d1f2a2656afa96c6eb&units=metric`, 
     {mode:"cors"});
     response.json().then((response) => {
         try {
